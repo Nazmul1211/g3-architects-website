@@ -7,7 +7,7 @@
     font-family: 'Work Sans', sans-serif;
 }
 
-.text-gray{
+.text-gray {
     color: gray;
 }
 
@@ -73,59 +73,79 @@ nav li a {
 }
 
 /* main style */
-main{
+main {
     max-width: 1440px;
     margin: 0 auto;
 }
+
 /* teams style */
-.teams-container{
+.teams-container {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 3rem;
 }
-.teams-img-container{
+
+.teams-img-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
 }
-.teams-content{
+
+.teams-content {
     padding-left: 70px;
     padding-right: 70px;
 }
 
-.quick-list{
+.quick-list {
     color: #424242;
     font-weight: 500;
 }
-.offour{
+
+.offour {
     color: #131313;
     font-weight: 700;
 }
-.features{
+
+.features {
     color: #ff900e;
     font-weight: 700;
 }
+
 /* facts section style */
-.facts-card-container{
+.facts-card-container {
     display: flex;
     justify-content: space-around;
     margin-top: 2rem;
 }
-.card{
+
+.card {
     border: 1px solid orange;
     border-radius: 10px;
     padding: 2rem;
     text-align: center;
 }
-.card-title{
+
+.card-title {
     font-weight: 700;
     color: #424242;
 }
-.card-stats{
+
+.card-stats {
     font-weight: 2.8rem;
     color: #424242;
     margin-top: 5px;
+}
+
+/* sponsors section style */
+.sponsors {
+    text-align: center;
+}
+
+.sponsors-img-container {
+    margin: 50px auto 100px auto;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 
@@ -145,27 +165,44 @@ main{
     nav li {
         margin: 0 10px 0 10px;
     }
-    .teams-container{
+
+    .teams-container {
         flex-direction: column-reverse;
     }
-    .teams-img-container{
+
+    .teams-img-container {
         margin-top: 4rem;
         grid-template-columns: repeat(1, 1fr);
     }
+
     /* facts section style */
-    .facts-card-container{
+    .facts-card-container {
         flex-direction: column;
         justify-content: space-around;
         margin-top: 1rem;
         gap: 1.5rem;
         margin: auto 1rem;
     }
-    .facts > .section-title{
+
+    .facts>.section-title {
         padding: 0 1rem;
     }
-    
-    .facts > .text-gray{
+
+    .text-gray {
         padding: 0 1rem;
+    }
+
+    /* sponsors style */
+    .sponsors-img-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 3rem 4rem;
+        gap: 1.2rem;
+        justify-content: space-evenly;
+    }
+
+    .sponsors-img-container img {
+        width: 35%;
     }
 }
 
@@ -175,40 +212,62 @@ main{
     header {
         padding: 50px;
     }
+
     nav {
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
+
     nav {
         flex-direction: column;
     }
 
-    .teams-container{
+    .teams-container {
         flex-direction: column-reverse;
     }
-    .teams-img-container{
+
+    .teams-img-container {
         margin-top: 4rem;
         grid-template-columns: repeat(2, 1fr);
         justify-content: space-evenly;
     }
-        /* facts section style */
-        .facts-card-container{
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            justify-content: space-around;
-            margin-top: 1rem;
-            gap: 1.5rem;
-            margin: auto 3.5rem;
-        }
-        .facts > .section-title{
-            margin-left: 3.5rem;
-        }
-        
-        .facts > .text-gray{
-            margin-left: 3.5rem;
-            margin-bottom: 2rem;
-        }
+
+    /* facts section style */
+    .facts-card-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-around;
+        margin-top: 1rem;
+        gap: 1.5rem;
+        margin: auto 3.5rem;
+    }
+
+    .facts>.section-title {
+        margin-left: 3.5rem;
+    }
+
+    .facts>.text-gray {
+        margin-left: 3.5rem;
+        margin-bottom: 2rem;
+    }
+
+    /* sponsors style */
+    .sponsors-img-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 3rem 4rem;
+        gap: 1.2rem;
+        justify-content: space-evenly;
+    }
+
+    .sponsors-img-container img {
+        width: 12%;
+    }
+
+    .sponsors .text-gray{
+        text-align: center;
+        margin-left: 3.5rem;
+        margin-bottom: 2rem;
+    }
 }
-
-
